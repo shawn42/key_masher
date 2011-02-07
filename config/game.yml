@@ -2,7 +2,7 @@
 :title: My Gamebox Game!
 :sound: true
 :auto_quit: KbEscape
-:fullscreen: false
+:fullscreen: true
 :screen_resolution: 
 - 1024
 - 800
