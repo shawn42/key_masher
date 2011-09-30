@@ -8,10 +8,10 @@ class Letter < Actor
     super
     @letter = opts[:letter]
     @scale = opts[:scale]
-    @scale_tween = Tween.new([@scale,0], [@scale*(3-rand(3)),0], Tween::Quart::InOut, 3)
+    @scale_tween = Tween.new([@scale,0], [@scale*(4-rand(3)),0], Tween::Quart::InOut, 3)
     @ttl_tween = Tween.new([0xFF,0], [0,0], Tween::Quart::InOut, 10)
-    x_drift = x+(800-rand(1600))
-    y_drift = y+(600-rand(1200))
+    x_drift = x+(700-rand(1400))
+    y_drift = y+(500-rand(1000))
     @pos_tween = Tween.new([x,y], [x_drift,y_drift], Tween::Bounce::Out, 2)
   end
 

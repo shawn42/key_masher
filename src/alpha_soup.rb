@@ -20,7 +20,7 @@ class AlphaSoup < Actor
 
   def spawn_letter(letter)
     scale = rand
-    spawn :letter, :x => rand(stage.viewport.width), :y => rand(stage.viewport.height), :letter => letter, :scale => (1+scale)
+    spawn :letter, :x => rand(stage.viewport.width*0.8), :y => rand(stage.viewport.height*0.8), :letter => letter, :scale => (1+scale)
     play_sound :new_letter
   end
 end
